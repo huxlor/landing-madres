@@ -1,0 +1,122 @@
+.nopadding{
+    padding: 0;
+}
+
+.nopadding-left{
+    padding-left: 0;
+}
+
+.center, .wrapper{
+    @media screen and (max-width: 991px) {
+        min-width: initial;
+    }
+}
+
+strong{
+    font-weight: bold !important; 
+}
+
+// GRID CSS
+
+#landing_madres{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    .container_general{
+        margin: 0 70px;
+       .intern-grid{
+            text-align: center;
+            a{
+                img{
+                    display: block;
+                    // margin: 0 auto;
+                    width: 100%;
+                    // padding: 10px;
+                    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.29);
+                    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.29);
+                    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.29);
+                }
+
+                .desktop{
+                    display: block;
+                    @media screen and (max-width: 760px) {
+                        display: none;
+                    }
+                }
+
+                .mobile{
+                    display: none;
+                    @media screen and (max-width: 760px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .intern-grid{
+            margin: 5px;
+        }
+
+        @media screen and (max-width: 760px) {
+            margin: 0;
+        }
+    }
+
+    .banner{
+        margin-bottom: 50px;
+        a{
+            img{
+                width: 100%;
+                -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.29);
+                -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.29);
+                box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.29);
+            }
+        }
+    }
+
+    .grid-container{
+        display: grid;
+        // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "F1 F2 F3 F4 F5" "F6 F7 FC FC FC";
+            .F1 { grid-area: F1; }
+            .F2 { grid-area: F2; }
+            .F3 { grid-area: F3; }
+            .F4 { grid-area: F4; }
+            .F5 { grid-area: F5; }
+            .F6 { grid-area: F6; }
+            .F7 { grid-area: F7; 
+            }
+            .FC { 
+                grid-area: FC; 
+                .desktop{
+                    display: block;
+                }
+
+                .mobile{
+                    display: none;
+                }
+
+                @media screen and (max-width: 760px) {
+                    .desktop{
+                        display: none;
+                    }
+    
+                    .mobile{
+                        display: block;
+                    }
+                }
+            }
+            @media screen and (max-width: 760px) {
+                grid-template-areas: "F1 F2"
+                                     "F3 F4"
+                                     "F5 F6"
+                                     "F7 FC"
+        }
+    }
+
+    // .center{
+    //     background-image: url('/arquivos/fondoflores.jpg');
+    //     background-size: 100% auto;
+    //     background-repeat: no-repeat;
+    // }
+}

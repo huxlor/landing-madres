@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="es-CO">
+<head>
+    <title>Tiendas Jumbo Colombia - Compra fácil, Compra más</title>
+    <vtex:metaTags/>
+    <vtex:template id="commonCss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]><script src="/arquivos/ie.js"></script><![endif]-->
+    <style>
+    .holiday-shipment * { text-align:center;} 
+    .holiday-shipment:after{ content: ""; display: table; clear: both; float: none;}
+    .container h2{background:transparent;padding:0;margin: 0em auto 0.4em;line-height: 1.7em;font-size:1.5em;font-family: "Open Sans Condensed";font-weight: 700;text-transform: none;color: #093;border-bottom: 3px solid #093;box-shadow: none;text-align: center;padding:0;margin:25px auto 15px;line-height: 1.7em;font-size:1.5em;font-family: "Open Sans Condensed";font-weight: 700;text-transform: none;color: #888;box-shadow: none; border-bottom:none; position: relative;padding-bottom: 0.6em;padding-top: 0.25em;line-height: 1.1em;}
+    .container h2:after{content: ""; display: block;border: 0;margin: 0.35em auto;max-width: 100%; background-position: 50%;height: 2px;background-image: linear-gradient( 90deg, hsla(0, 100%, 100%, 0), hsla(0, 0%, 41%, 0.5) 50%, hsla(0, 100%, 100%, 0) 100%);  position: absolute;bottom: 0;left: 0;right: 0;}
+
+    .city-search-form h3 img{ max-width: 180px;}
+    .city-search-form{ float: left; width:70%; padding:10px 20px;}
+    .city-search-form .current-day{ color: #333; font-weight:bold;}
+    .city-search-form .city-search-field{ border: 1px solid #DDD; box-shadow: none; line-height: 45px; padding: 0 15px; color:#999; font-size: 1.4em; font-weight: normal; height: auto; width:80%; max-width: 100%; border-bottom: 3px solid #DDD; border-radius: 0 0 0 12px; display: inline-block;}
+    .city-search-form .btn-search{ border: none; text-shadow:none; display: inline-block; height: auto; background: #f90; color:#fff; line-height: 45px; padding:0 25px; box-shadow:none; font-weight: bold; font-size:1.2em; text-align: center; border-radius: 0px;border-bottom: 3px solid #BF7301; position: relative; width: 20%; float: right;}
+    .city-search-form .clearfix{ margin:15px auto;}
+    .city-search-form .legal{ color:#BBB; font-size: 1em; line-height: 1.1em;}
+
+    .city-search-result{ float: left; width:calc( 30% - 1px );padding:10px 10px 10px 20px; border-left: 1px solid #CCC; margin-top: 100px;}
+    .city-search-result .result-box{ position: relative; background:#F8F8F8; border: 1px solid #AAA; border-radius:8px; padding:6px; text-align: center;}
+    .city-search-result .result-box .dots{ width: 100%; display: block; height: 20px; position: relative; margin:0 auto}
+    .city-search-result .result-box .dots:before{ content: ""; border-radius: 50%; width:10px; height: 10px; position: absolute; left:3px; top: 3px; background: #ccc;}
+    .city-search-result .result-box .dots:after{ content: ""; border-radius: 50%; width:10px; height: 10px; position: absolute; right:3px; top: 3px; background: #ccc;}
+    .city-search-result .result-box label{ margin: 10px auto; text-align: center; font-size: 1em; line-height: 1.2em; font-weight: bold; color: #999;}
+    .city-search-result .result-box .search-answer{ width: 130px; color:#FFF; margin: 20px auto; border-radius: 3px; line-height: 50px; font-size: 2em; font-weight: bold; background: #AAA; text-align: center; display: block; height: 50px; transition:0.3s ease-in;}
+    .city-search-result .result-box .search-answer.green{ background:#95B947;}
+    .city-search-result .result-box .search-answer.red{ background:#FFCCCC; color:#C47474;}
+    .city-search-result .result-box span{ text-align: center; display: block; padding:0 25px;transition:0.3s ease-in;}
+    </style>
+        
+    <meta id="identifier" name="identifier" content="informativo" />
+    <script type="text/javascript" src="http://libs.coremetrics.com/eluminate.js"></script>
+
+    <script>
+        cmSetClientID("52670000|JMB",true,"data.coremetrics.com","tiendasjumbo.co");
+        var digitalData = {pageInstanceID:document.getElementById('identifier').getAttribute('content')};
+    </script>
+
+</head>
+<body>
+<!--[if lte IE 9]>
+  <p class=chromeframe style="text-align:center; margin:0; padding:10px 0; background:#888; color:#FFF;"><i class="fa fa-desktop"></i> Para mejorar tu experiencia de compra en nuestro sitio, te invitamos a <a href="http://outdatedbrowser.com/es" target="_blank" style="color:#fff; text-decoration:none; font-weight:bold;">descargar un navegador más moderno</a> o <a href="http://www.google.com/chrome" target="_blank" style="color:#fff; text-decoration:none; font-weight:bold;">instalar Google Chrome</a> <i class="fa fa-html5"></i></p>
+<![endif]-->
+    <!--  SubTemplate: Header -->
+       <vtex:template id="Header" />
+    <!-- /SubTemplate: Header -->
+       
+    <div class="container">
+        <h2>¿Quieres saber si tu pedido llega antes de navidad?</h2>
+        <div class="holiday-shipment">
+          <div class="city-search-form">      
+            <h3>*Si compras <span class="current-day"></span>en <img src="/arquivos/logo-tiendasjumbo.co.png" /> y envías tu pedido a:</h3>
+            <input type="text" class="city-search-field" value="" placeholder="Digita la ciudad de destino" />
+            <a href="#" class="btn-search">Verificar</a>
+            <div class="clearfix"><img src="/arquivos/head-cobertura.jpg" /></div>
+            <div class="legal">Los tiempos de entrega estarán sujetos a situaciones normales de tránsito terrestre. Pueden variar en casos extraordinarios como: Restricciones de movilidad, catástrofes naturales, siniestros automóvilisticos y/o demás situaciones de fuerza mayor no descritas anteriormente.</div>
+          </div>
+          <div class="city-search-result">
+            <div class="result-box">
+              <span class="dots"></span>
+               <img src="/arquivos/logo-tiendasjumbo.co.png" style=" margin:0 auto; padding:0 10px;" />
+               <label>¿Mi pedido llegará antes de navidad?</label>
+               <div class="search-answer"></div>
+               <span class="legal-answer"></span>
+              <span class="dots"></span>
+            </div>
+            
+          </div>
+        </div>
+        
+    </div>
+    
+    <!--  SubTemplate: Footer -->
+      <vtex:template id="Footer" />
+    <!-- /SubTemplate: Footer -->
+    
+<vtex:template id="commonScripts" />
+<!-- <script src="/arquivos/ship-handler.js?v=1.1"></script> -->
+<script src="/arquivos/ship-handler-2017-ini4.js"></script>
+</body>
+</html>
